@@ -1,10 +1,13 @@
 package com.spring.core;
 
 public class Traveler {
-    Car car = null;
+    Vehicle vehicle = null;
 
-    public Traveler() {
-        this.car = new Car();
+    public Traveler(Vehicle vehicle) {
+        this.vehicle = vehicle;
     }
 
+    public void startJourney(){
+        this.vehicle.move();
+    }
 }
